@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcA-OI-0GL">
+                                <rect key="frame" x="0.0" y="125" width="600" height="475"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWe-gT-5I7">
+                                <rect key="frame" x="560" y="20" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Jip-KS-QFv"/>
+                                    <constraint firstAttribute="width" constant="40" id="T1X-SX-w4i"/>
+                                </constraints>
+                                <state key="normal" title="more">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moreAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4hM-EV-BhA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HcA-OI-0GL" firstAttribute="top" secondItem="nWe-gT-5I7" secondAttribute="bottom" constant="65" id="2R3-Ei-HaH"/>
+                            <constraint firstItem="HcA-OI-0GL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Sj7-do-ihJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nWe-gT-5I7" secondAttribute="trailing" constant="-20" id="Szq-jS-6CO"/>
+                            <constraint firstAttribute="trailing" secondItem="HcA-OI-0GL" secondAttribute="trailing" id="jIO-gu-eyw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HcA-OI-0GL" secondAttribute="bottom" id="qDw-6q-2Cm"/>
+                            <constraint firstItem="nWe-gT-5I7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ucg-bn-9Pq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="operateButton" destination="nWe-gT-5I7" id="l6R-Gd-lbP"/>
+                        <outlet property="showLabel" destination="HcA-OI-0GL" id="9hu-8b-mHW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="317" y="439"/>
+        </scene>
+    </scenes>
+</document>
